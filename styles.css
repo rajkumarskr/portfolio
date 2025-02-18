@@ -152,10 +152,22 @@ h2 {
 
 /* Experience Section */
 .experience-card {
-    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
     padding: 1.5rem;
+    background: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+.company-logo {
+    flex-shrink: 0;
+}
+
+.company-logo img {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
 }
 
 .company-header {
@@ -165,18 +177,124 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
+.company-details {
+    flex-grow: 1;
+}
+
 .company-header h3 {
     margin: 0;
+    font-size: 1.5rem;
+    color: #2c3e50;
 }
+
+.company-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.company-link:hover {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+.company-role {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.company-duration {
+    margin: 0.25rem 0 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.company-description {
+    margin: 1rem 0 0;
+    padding-left: 1.5rem;
+    color: #555;
+}
+
+.company-description li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .experience-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .company-logo img {
+        width: 150px;
+    }
+
+    .company-description {
+        text-align: left;
+    }
+}
+
 .college-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
     margin-bottom: 0.5rem;
 }
 
 .college-header h3 {
     margin: 0;
+    font-size: 1.25rem;
+}
+.university-name {
+    font-size: 1.1rem;
+    color: #666;
+}
+.education-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+.college-degree {
+    margin: 0.5rem 0 0;
+    color: #444;
+}
+
+.college-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.college-link:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .education-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .college-logo img {
+        width: 80px;
+    }
+}
+.college-logo {
+    flex-shrink: 0;
+}
+
+.college-logo img {
+    width: 100px;
+    height: auto;
+    max-width: 150px;
+}
+
+.college-details {
+    flex-grow: 1;
 }
 
 .website-link {
