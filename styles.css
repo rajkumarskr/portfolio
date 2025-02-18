@@ -19,12 +19,107 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #2c3e50, #3498db);
+    background: linear-gradient(135deg, #2c3e50 30%, #3498db 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 1rem;
+}
+.header-profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.header-text {
+    flex: 1;
     color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tagline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.tagline-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.tagline-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.tagline-divider {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Animated background element */
+.animated-blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(45deg, #4CAF50, #3498db);
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    opacity: 0.1;
+    animation: blob-morph 20s infinite linear;
+    top: -50%;
+    right: -10%;
+}
+
+@keyframes blob-morph {
+    0%, 100% { border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%; }
+    33% { border-radius: 72% 28% 48% 48% / 28% 72% 28% 72%; }
+    66% { border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-image {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .tagline {
+        justify-content: center;
+        font-size: 1.1rem;
+    }
+    
+    .animated-blob {
+        display: none;
+    }
 }
 
 header h1 {
