@@ -9,3 +9,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 });
+
+function toggleDescription(descId) {
+    const desc = document.getElementById(descId);
+    const arrow = document.querySelector(`[data-id="${descId}"]`);
+
+    // Toggle description visibility
+    desc.style.display = desc.style.display === "none" ? "block" : "none";
+    
+    // Toggle arrow rotation
+    arrow.classList.toggle('rotate-arrow');
+}

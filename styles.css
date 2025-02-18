@@ -87,12 +87,37 @@ h2 {
     color: #4CAF50;
 }
 
+.skill-header {
+    cursor: pointer; /* Makes the entire header clickable */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.skill-header:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+    border-radius: 5px;
+}
+
 .skill-desc {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
     color: #666;
     margin-top: 0.5rem;
+}
+
+.dropdown-arrow {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.dropdown-arrow:hover {
+    color: #2e211b; /* Darker arrow on hover */
+}
+
+.rotate-arrow {
+    transform: rotate(180deg); /* Rotate arrow when description is visible */
 }
 
 .skill-desc.show {
