@@ -622,3 +622,33 @@ button[type="submit"]::after {
     border-radius: 8px;
     text-align: center;
 }
+
+
+.phone-input-group {
+    display: flex;
+    align-items: center;
+    background: rgba(245, 245, 245, 0.8);
+    border-radius: 6px;
+	outline: none;
+    border-color: #8d99ae;
+    box-shadow: 0 0 0 3px rgba(141, 153, 174, 0.2);
+}
+
+.country-code {
+    padding: 12px;
+    background: #f0f0f0;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    color: #666;
+}
+
+#phone {
+    border: none;
+    background: white;
+    padding: 12px;
+    width: 100%;
+    outline: none;
+}
+
+#phone:focus {
+    box-shadow: none;
+}

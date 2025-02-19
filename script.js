@@ -90,3 +90,14 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
         setTimeout(() => status.style.display = 'none', 5000);
     }
 });
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    const phoneInput = document.getElementById('phone');
+    const fullNumber = '+91' + phoneInput.value;
+    phoneInput.value = fullNumber; // Combine values before submission
+});
+
+// Optional: Auto-format input
+document.getElementById('phone').addEventListener('input', function(e) {
+    this.value = this.value.replace(/\D/g,'').substring(0,10);
+});
