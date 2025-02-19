@@ -50,3 +50,43 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+// Contact Form Handling
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const form = e.target;
+    const status = document.getElementById('formStatus');
+    const button = form.querySelector('button[type="submit"]');
+    const originalButtonText = button.innerHTML;
+    
+    try {
+        button.innerHTML = 'Sending...';
+        button.disabled = true;
+        
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            status.className = 'success';
+            status.innerHTML = 'Message sent successfully!';
+            form.reset();
+        } else {
+            status.className = 'error';
+            status.innerHTML = 'Oops! There was a problem sending your message.';
+        }
+    } catch (error) {
+        status.className = 'error';
+        status.innerHTML = 'Oops! There was a problem sending your message.';
+    } finally {
+        button.innerHTML = originalButtonText;
+        button.disabled = false;
+        setTimeout(() => status.style.display = 'none', 5000);
+    }
+});

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v10/font/simple-icons.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -143,6 +145,31 @@
         </div>
     </div>
 </section>
+
+<div class="contact-form">
+    <h2><i class="fa-solid fa-handshake"></i> Let's Connect</h2>
+    <form id="contactForm" action="https://formspree.io/f/xeoevpkj" method="POST">
+        <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Your Email:</label>
+			<input type="email" id="email" name="email" required placeholder="example@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 Your Phone Number">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Hi Raj..."></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="New Contact from Portfolio">
+		<button type="submit"><i class="fas fa-paper-plane"></i>Send Message</button>
+    </form>
+    <div id="formStatus"></div>
+</div>
 
 <!-- Contact Section -->
 <section class="card" id="contact">

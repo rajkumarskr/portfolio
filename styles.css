@@ -526,3 +526,99 @@ h2 {
         grid-template-columns: 1fr;
     }
 }
+
+
+
+
+/* Contact Form Styles */
+.contact-form {
+    background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    max-width: 600px;
+    margin: 2rem auto;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    color: #2b2d42;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-form h2 i {
+    color: #4CAF50;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4CAF50;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #8d99ae;
+    box-shadow: 0 0 0 3px rgba(141, 153, 174, 0.2);
+}
+
+button[type="submit"] {
+    background: #4CAF50;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+	gap: 8px;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.2);
+}
+
+button[type="submit"]:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px -1px rgba(79, 70, 229, 0.1);
+}
+
+/* Optional: Add send icon */
+button[type="submit"]::after {
+    content: '\f1d8';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+
+#formStatus {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
