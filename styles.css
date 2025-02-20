@@ -18,6 +18,38 @@ body {
     color: var(--text-dark);
 }
 
+/* Add this to your existing CSS */
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #2d3748;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#menu li a:hover {
+    color: #4CAF50;
+}
+
 header {
     background: linear-gradient(135deg, #2c3e50 30%, #3498db 100%);
     position: relative;
