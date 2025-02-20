@@ -169,12 +169,17 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+	position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#skillsList li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+#skillsList li:hover .dropdown-link::after {
+	transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#skillsList li:hover .dropdown-link {
+    color: #2196F3;
 }
 
 #skillsList li i {
@@ -210,7 +215,7 @@ h2 {
 
 .dropdown-link {
     position: relative;
-    display: inline-block;
+    display: block; /* Changed to block element */
     padding-bottom: 5px;
     cursor: pointer;
     color: #2e211b;
@@ -220,9 +225,9 @@ h2 {
 .dropdown-link::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: -3px;
+    left: 0; /* Full width starting from left edge */
+    width: 100%; /* Span entire container width */
     height: 2px;
     background-color: #2196F3;
     transform: scaleX(0);
@@ -243,12 +248,16 @@ h2 {
     display: none;
     position: absolute;
     top: 100%;
-    left: 28px; /* Adjust based on icon width */
+    left: 28px;
     background: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     animation: slideDown 0.3s ease;
     min-width: 120px;
     padding: 10px 0;
+    z-index: 2; /* Ensure dropdown appears above underline */
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 @keyframes slideDown {
