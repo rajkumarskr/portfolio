@@ -18,7 +18,6 @@ body {
     color: var(--text-dark);
 }
 
-/* Add this to your existing CSS */
 #menu {
     display: flex;
     justify-content: center;

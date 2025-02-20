@@ -101,3 +101,23 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 document.getElementById('phone').addEventListener('input', function(e) {
     this.value = this.value.replace(/\D/g,'').substring(0,10);
 });
+
+
+// Add this to your existing script
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuOpen = document.getElementById('mobile-menu-open');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const menu = document.getElementById('menu');
+
+    mobileMenuOpen.addEventListener('click', () => {
+        menu.classList.add('mobile-active');
+        mobileMenuOpen.style.display = 'none';
+        mobileMenuClose.style.display = 'block';
+    });
+
+    mobileMenuClose.addEventListener('click', () => {
+        menu.classList.remove('mobile-active');
+        mobileMenuOpen.style.display = 'block';
+        mobileMenuClose.style.display = 'none';
+    });
+});
