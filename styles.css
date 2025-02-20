@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary-green: #4CAF50;
     --github-black: #171515;
@@ -10,7 +14,8 @@
 
 /* General Styles */
 body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
+    letter-spacing: -0.02em;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -70,11 +75,25 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #2c3e50 30%, #3498db 100%);
+    background: linear-gradient(
+        135deg,
+        #2c3e50 25%,
+        #3498db 50%,
+        #2c3e50 75%
+    );
+    background-size: 400% 400%;
+    animation: gradient-flow 12s ease infinite;
     position: relative;
     overflow: hidden;
     padding: 3rem 1rem;
 }
+
+@keyframes gradient-flow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 .header-profile {
     display: flex;
     align-items: center;
@@ -96,6 +115,7 @@ header {
 
 .profile-image:hover {
     transform: scale(1.05);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 .header-text {
@@ -203,6 +223,7 @@ h2 {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+	font-weight: 600;
 }
 
 /* Skills Section */
@@ -460,6 +481,16 @@ h2 {
     font-size: 1.1rem;
     color: #666;
 }
+
+.education-card, .experience-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover, .experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
 .education-card {
     display: flex;
     align-items: center;
