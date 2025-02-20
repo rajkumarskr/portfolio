@@ -48,6 +48,7 @@ body {
 
 #menu li a {
     text-decoration: none;
+	font-size: 20px;
     color: #2d3748;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -56,12 +57,12 @@ body {
 
 @media screen and (max-width: 480px) {
     #menu {
-        width: 90%;
+        width: 100%;
         padding: 8px;
     }
 	
 	#menu li {
-        margin: 0 5px; /* Reduce space */
+        margin: 0 2px; /* Reduce space */
     }
 	
     #menu li a {
@@ -742,4 +743,17 @@ button[type="submit"]::after {
 
 #phone:focus {
     box-shadow: none;
+}
+
+.theme-toggle {
+    background: #edf1f7;
+    border: none;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
