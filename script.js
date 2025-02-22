@@ -1,1 +1,123 @@
-const a0_0x26c086=a0_0x3802;function a0_0x3802(_0x36d402,_0x299927){const _0x47b26f=a0_0x47b2();return a0_0x3802=function(_0x3802dc,_0x63ecad){_0x3802dc=_0x3802dc-0x16d;let _0x574af2=_0x47b26f[_0x3802dc];return _0x574af2;},a0_0x3802(_0x36d402,_0x299927);}function a0_0x47b2(){const _0x41fe02=['click','block','mobile-menu-open','value','log','submit','#skillsList\x20li','error','5nGzirw','key','querySelector','240951JcagCR','93789VIHYrP','.dropdown-content','application/json','208758XTGGli','none','Message\x20sent\x20successfully!','innerHTML','[data-id=\x22','forEach','mobile-active','className','phone','getElementById','input','.dropdown','style','classList','DOM\x20fully\x20loaded\x20and\x20parsed','230aipujr','substring','254274eEfROv','49mOoecQ','Sending...','You\x20clicked\x20on\x20','addEventListener','querySelectorAll','add','Escape','preventDefault','rotate-arrow','textContent','DOMContentLoaded','Oops!\x20There\x20was\x20a\x20problem\x20sending\x20your\x20message.','toggle','success','170315aKPpAs','533992leKQbf','target','disabled','display','POST','button[type=\x22submit\x22]','664kmvVHD','1915546PDMLLD'];a0_0x47b2=function(){return _0x41fe02;};return a0_0x47b2();}(function(_0x389987,_0xca9574){const _0x48052d=a0_0x3802,_0x10deaa=_0x389987();while(!![]){try{const _0x6710be=-parseInt(_0x48052d(0x17d))/0x1+parseInt(_0x48052d(0x185))/0x2+parseInt(_0x48052d(0x191))/0x3+parseInt(_0x48052d(0x17e))/0x4*(-parseInt(_0x48052d(0x18e))/0x5)+parseInt(_0x48052d(0x16e))/0x6*(parseInt(_0x48052d(0x16f))/0x7)+-parseInt(_0x48052d(0x184))/0x8*(parseInt(_0x48052d(0x192))/0x9)+parseInt(_0x48052d(0x1a4))/0xa*(parseInt(_0x48052d(0x195))/0xb);if(_0x6710be===_0xca9574)break;else _0x10deaa['push'](_0x10deaa['shift']());}catch(_0x488b80){_0x10deaa['push'](_0x10deaa['shift']());}}}(a0_0x47b2,0x93171));function toggleDescription(_0x2077d7){const _0x42669c=a0_0x3802,_0x329005=document[_0x42669c(0x19e)](_0x2077d7),_0x240190=document[_0x42669c(0x190)](_0x42669c(0x199)+_0x2077d7+'\x22]');_0x329005[_0x42669c(0x1a1)]['display']=_0x42669c(0x196)===_0x329005[_0x42669c(0x1a1)][_0x42669c(0x181)]?_0x42669c(0x187):_0x42669c(0x196),_0x240190[_0x42669c(0x1a2)][_0x42669c(0x17b)](_0x42669c(0x177));}document['addEventListener'](a0_0x26c086(0x179),_0x2a23b2=>{const _0x5a6d2b=a0_0x26c086;console[_0x5a6d2b(0x18a)](_0x5a6d2b(0x1a3)),document['querySelectorAll'](_0x5a6d2b(0x18c))['forEach'](_0x35fa8c=>{const _0x13c419=_0x5a6d2b;_0x35fa8c[_0x13c419(0x172)](_0x13c419(0x186),function(){const _0x26ab3c=_0x13c419;alert(_0x26ab3c(0x171)+this[_0x26ab3c(0x178)]+'!');});});}),document['addEventListener'](a0_0x26c086(0x179),()=>{const _0x3d5d24=a0_0x26c086;document[_0x3d5d24(0x173)](_0x3d5d24(0x1a0))['forEach'](_0x34a441=>{const _0x411b73=_0x3d5d24,_0x359861=_0x34a441[_0x411b73(0x190)]('.dropdown-link'),_0x37b217=_0x34a441[_0x411b73(0x190)](_0x411b73(0x193));_0x359861['addEventListener'](_0x411b73(0x186),_0x3861b6=>{const _0x58c427=_0x411b73;_0x3861b6[_0x58c427(0x176)](),_0x37b217['style'][_0x58c427(0x181)]='block'===_0x37b217[_0x58c427(0x1a1)][_0x58c427(0x181)]?'none':_0x58c427(0x187);});}),document['addEventListener'](_0x3d5d24(0x186),_0x44d619=>{const _0x3b47f8=_0x3d5d24;_0x44d619[_0x3b47f8(0x17f)]['closest'](_0x3b47f8(0x1a0))||document['querySelectorAll'](_0x3b47f8(0x193))['forEach'](_0x2a40a8=>{const _0x514bb4=_0x3b47f8;_0x2a40a8['style'][_0x514bb4(0x181)]=_0x514bb4(0x196);});}),document[_0x3d5d24(0x172)]('keydown',_0x453d9b=>{const _0x314e19=_0x3d5d24;_0x314e19(0x175)===_0x453d9b[_0x314e19(0x18f)]&&document[_0x314e19(0x173)](_0x314e19(0x193))[_0x314e19(0x19a)](_0x3206bb=>{const _0x3fed99=_0x314e19;_0x3206bb[_0x3fed99(0x1a1)][_0x3fed99(0x181)]=_0x3fed99(0x196);});});}),document[a0_0x26c086(0x19e)]('contactForm')[a0_0x26c086(0x172)](a0_0x26c086(0x18b),async _0x40d4ed=>{const _0x31a3cb=a0_0x26c086;_0x40d4ed[_0x31a3cb(0x176)]();const _0xf090f5=_0x40d4ed[_0x31a3cb(0x17f)],_0x3cbfd2=document[_0x31a3cb(0x19e)]('formStatus'),_0x17781b=_0xf090f5[_0x31a3cb(0x190)](_0x31a3cb(0x183)),_0x21437a=_0x17781b[_0x31a3cb(0x198)];try{_0x17781b[_0x31a3cb(0x198)]=_0x31a3cb(0x170),_0x17781b['disabled']=!0x0,(await fetch(_0xf090f5['action'],{'method':_0x31a3cb(0x182),'body':new FormData(_0xf090f5),'headers':{'Accept':_0x31a3cb(0x194)}}))['ok']?(_0x3cbfd2['className']=_0x31a3cb(0x17c),_0x3cbfd2[_0x31a3cb(0x198)]=_0x31a3cb(0x197),_0xf090f5['reset']()):(_0x3cbfd2['className']='error',_0x3cbfd2['innerHTML']=_0x31a3cb(0x17a));}catch(_0x5aa55c){_0x3cbfd2[_0x31a3cb(0x19c)]=_0x31a3cb(0x18d),_0x3cbfd2[_0x31a3cb(0x198)]='Oops!\x20There\x20was\x20a\x20problem\x20sending\x20your\x20message.';}finally{_0x17781b['innerHTML']=_0x21437a,_0x17781b[_0x31a3cb(0x180)]=!0x1,setTimeout(()=>_0x3cbfd2['style'][_0x31a3cb(0x181)]='none',0x1388);}}),document[a0_0x26c086(0x19e)]('contactForm')[a0_0x26c086(0x172)](a0_0x26c086(0x18b),function(_0x469bb3){const _0x38c932=a0_0x26c086,_0x393119=document[_0x38c932(0x19e)](_0x38c932(0x19d)),_0x3309cc='+91'+_0x393119['value'];_0x393119['value']=_0x3309cc;}),document['getElementById']('phone')[a0_0x26c086(0x172)](a0_0x26c086(0x19f),function(_0x5a3d9f){const _0x16ea86=a0_0x26c086;this['value']=this[_0x16ea86(0x189)]['replace'](/\D/g,'')[_0x16ea86(0x16d)](0x0,0xa);}),document[a0_0x26c086(0x172)](a0_0x26c086(0x179),function(){const _0x23f19b=a0_0x26c086,_0x4e77f5=document['getElementById'](_0x23f19b(0x188)),_0x3f1971=document[_0x23f19b(0x19e)]('mobile-menu-close'),_0x5af2c0=document[_0x23f19b(0x19e)]('menu');_0x4e77f5['addEventListener'](_0x23f19b(0x186),()=>{const _0x10ddf6=_0x23f19b;_0x5af2c0[_0x10ddf6(0x1a2)][_0x10ddf6(0x174)]('mobile-active'),_0x4e77f5['style'][_0x10ddf6(0x181)]=_0x10ddf6(0x196),_0x3f1971[_0x10ddf6(0x1a1)][_0x10ddf6(0x181)]='block';}),_0x3f1971[_0x23f19b(0x172)](_0x23f19b(0x186),()=>{const _0x27f9a5=_0x23f19b;_0x5af2c0['classList']['remove'](_0x27f9a5(0x19b)),_0x4e77f5['style'][_0x27f9a5(0x181)]=_0x27f9a5(0x187),_0x3f1971[_0x27f9a5(0x1a1)][_0x27f9a5(0x181)]=_0x27f9a5(0x196);});});
+document.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+
+    // Example of interactivity - show a message when a skill is clicked
+    const skills = document.querySelectorAll('#skillsList li');
+    skills.forEach(skill => {
+        skill.addEventListener('click', function() {
+            alert('You clicked on ' + this.textContent + '!');
+        });
+    });
+});
+
+function toggleDescription(descId) {
+    const desc = document.getElementById(descId);
+    const arrow = document.querySelector(`[data-id="${descId}"]`);
+
+    // Toggle description visibility
+    desc.style.display = desc.style.display === "none" ? "block" : "none";
+    
+    // Toggle arrow rotation
+    arrow.classList.toggle('rotate-arrow');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const link = dropdown.querySelector('.dropdown-link');
+        const content = dropdown.querySelector('.dropdown-content');
+
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown-content').forEach(content => {
+                content.style.display = 'none';
+            });
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('.dropdown-content').forEach(content => {
+                content.style.display = 'none';
+            });
+        }
+    });
+});
+
+
+// Contact Form Handling
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const form = e.target;
+    const status = document.getElementById('formStatus');
+    const button = form.querySelector('button[type="submit"]');
+    const originalButtonText = button.innerHTML;
+    
+    try {
+        button.innerHTML = 'Sending...';
+        button.disabled = true;
+        
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            status.className = 'success';
+            status.innerHTML = 'Message sent successfully!';
+            form.reset();
+        } else {
+            status.className = 'error';
+            status.innerHTML = 'Oops! There was a problem sending your message.';
+        }
+    } catch (error) {
+        status.className = 'error';
+        status.innerHTML = 'Oops! There was a problem sending your message.';
+    } finally {
+        button.innerHTML = originalButtonText;
+        button.disabled = false;
+        setTimeout(() => status.style.display = 'none', 5000);
+    }
+});
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    const phoneInput = document.getElementById('phone');
+    const fullNumber = '+91' + phoneInput.value;
+    phoneInput.value = fullNumber; // Combine values before submission
+});
+
+// Optional: Auto-format input
+document.getElementById('phone').addEventListener('input', function(e) {
+    this.value = this.value.replace(/\D/g,'').substring(0,10);
+});
+
+
+// Add this to your existing script
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuOpen = document.getElementById('mobile-menu-open');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const menu = document.getElementById('menu');
+
+    mobileMenuOpen.addEventListener('click', () => {
+        menu.classList.add('mobile-active');
+        mobileMenuOpen.style.display = 'none';
+        mobileMenuClose.style.display = 'block';
+    });
+
+    mobileMenuClose.addEventListener('click', () => {
+        menu.classList.remove('mobile-active');
+        mobileMenuOpen.style.display = 'block';
+        mobileMenuClose.style.display = 'none';
+    });
+});
