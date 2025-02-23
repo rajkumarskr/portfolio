@@ -110,8 +110,12 @@ header {
     height: 180px;
     border-radius: 50%;
     border: 4px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); */
     transition: transform 0.3s ease;
+	box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
 }
 
 .profile-image:hover {
@@ -593,8 +597,6 @@ h2 {
 
 /* Icons */
 .fa-envelope { color: var(--gmail-red); }
-.fa-mobile-alt { color: var(--phone-black); }
-.fa-github { color: var(--github-black); }
 .fa-linkedin { color: var(--linkedin-blue); }
 
 /* Responsive Design */
@@ -675,7 +677,7 @@ h2 {
     box-shadow: 0 0 0 3px rgba(141, 153, 174, 0.2);
 }
 
-button[type="submit"] {
+button-seconadry[type="submit"] {
     background: #4CAF50;
     color: white;
     padding: 14px 28px;
@@ -687,25 +689,148 @@ button[type="submit"] {
 	gap: 8px;
 }
 
-button[type="submit"]:hover {
-    background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.2);
+/* From Uiverse.io by doniaskima */ 
+.btn-17,
+.btn-17 *,
+.btn-17 :after,
+.btn-17 :before,
+.btn-17:after,
+.btn-17:before {
+  border: 0 solid;
+  box-sizing: border-box;
 }
 
-button[type="submit"]:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 4px -1px rgba(79, 70, 229, 0.1);
+.btn-17 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
 }
 
-/* Optional: Add send icon */
-button[type="submit"]::after {
-    content: '\f1d8';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 14px;
-    margin-left: 8px;
+.btn-17:disabled {
+  cursor: default;
 }
+
+.btn-17:-moz-focusring {
+  outline: auto;
+}
+
+.btn-17 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-17 [hidden] {
+  display: none;
+}
+
+.btn-17 {
+  border-radius: 99rem;
+  border-width: 2px;
+  padding: 0.8rem 3rem;
+  z-index: 0;
+}
+
+.btn-17,
+.btn-17 .text-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-17 .text-container {
+  display: block;
+  mix-blend-mode: difference;
+}
+
+.btn-17 .text {
+  display: block;
+  position: relative;
+}
+
+.btn-17:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.btn-17:after,
+.btn-17:before {
+  --skew: 0.2;
+  background: #fff;
+  content: "";
+  display: block;
+  height: 102%;
+  left: calc(-50% - 50% * var(--skew));
+  pointer-events: none;
+  position: absolute;
+  top: -104%;
+  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.btn-17:after {
+  --progress: 0%;
+  left: calc(50% + 50% * var(--skew));
+  top: 102%;
+  z-index: -1;
+}
+
+.btn-17:hover:before {
+  --progress: 100%;
+}
+
+.btn-17:hover:after {
+  --progress: -102%;
+}
+
 
 
 #formStatus {
@@ -756,4 +881,60 @@ button[type="submit"]::after {
     gap: 8px;
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.button-third {
+  background-color: #fff;
+  border: 1px solid #0077b5;
+  padding: 2px 5px;
+  position: relative;
+  width: 9.2em;
+  height: 2.5em;
+  transition: 0.5s;
+  font-size: 13px;
+  border-radius: 0.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Ensures proper spacing */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Text styling */
+.button-third p {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s ease-in-out;
+  color: #0077b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+/* Resize & correctly center the LinkedIn icon */
+.button-third svg {
+  height: 1.2em; /* Adjust icon size */
+  width: 1.2em;
+  fill: #fff;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  transform: translateY(1px); /* Moves icon slightly down */
+}
+
+/* Hover Effects */
+.button-third:hover {
+  background-color: #0077b5;
+}
+
+.button-third:hover p {
+  color: #fff;
+  transform: translateX(-4px); /* Moves text slightly left */
+}
+
+.button-third:hover svg {
+  opacity: 1;
+  transform: translateX(4px) translateY(1px); /* Moves right & keeps it centered */
 }
