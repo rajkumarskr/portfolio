@@ -27,6 +27,8 @@ body {
 
 #menu {
     display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -883,6 +885,22 @@ button-seconadry[type="submit"] {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.theme-toggle-item a {
+  text-decoration: none;
+  padding: 3px 10px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle-item a:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #a777e3, #6e8efb);
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+}
 
 .button-third {
   background-color: #fff;
